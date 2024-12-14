@@ -9,7 +9,9 @@ Stack * create_stack(int initial_size)
 	s->contents = (int *)malloc(initial_size*sizeof(Item));
 	s->top=0;
 	s->size=initial_size;
-	return s;
+
+	printf("스택이 생성되었습니다. 초기 크기: %d\n", initial_size);
+   	return s;
 }
 
 void make_empty(Stack * stack)
